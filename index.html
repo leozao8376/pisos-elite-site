@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
   <!-- SEO - Pisos Elite -->
 <title>Pisos Elite | Piso Polido e Camuçado em Belo Horizonte - MG</title>
 <meta name="description" content="Pisos Elite é especializada em piso polido e camuçado de alto padrão em Belo Horizonte e todo o estado de Minas Gerais. Nivelamento a laser, acabamento impecável e atendimento rápido pelo WhatsApp.">
@@ -235,30 +235,29 @@
     <div id="resultado"></div>
   </section>
 
-  <section id="portfolio" class="secao-galeria" aria-labelledby="tit-portfolio">
-    <h2 id="tit-portfolio">Portfólio</h2>
-    <div class="filtro-container" aria-hidden="true">
-      <button class="filtro ativo" type="button">Destaques</button>
-    </div>
+  <!-- ==================== PORTFÓLIO (GALERIA DINÂMICA) ==================== -->
+<section id="portfolio" class="secao-galeria" aria-labelledby="tit-portfolio">
+  <header class="galeria-header">
+    <h2 id="tit-portfolio">Portfólio de Obras</h2>
+    <p>Veja nossos resultados de obras em todo o estado de Minas Gerais</p>
+  </header>
 
-    <div class="galeria-feed" id="galeria-feed">
-      <div><img class="media-item" src="/static/portfolio/p1.jpg" alt="Piso polido em garagem - brilho de acabamento" loading="lazy"></div>
-      <div><img class="media-item" src="/static/portfolio/p2.jpg" alt="Piso camuçado em passeio" loading="lazy"></div>
-      <div><img class="media-item" src="/static/portfolio/p3.jpg" alt="Piso sarrafeado em obra" loading="lazy"></div>
-      <div><img class="media-item" src="/static/portfolio/p4.jpg" alt="Nivelamento a laser" loading="lazy"></div>
-      <div><img class="media-item" src="/static/portfolio/p5.jpg" alt="Detalhe do acabamento camuçado" loading="lazy"></div>
-      <div><img class="media-item" src="/static/portfolio/p6.jpg" alt="Piso polido espelhado" loading="lazy"></div>
-      <div><img class="media-item" src="/static/portfolio/p7.jpg" alt="Execução de piso camuçado em rampa" loading="lazy"></div>
-      <div><img class="media-item" src="/static/portfolio/p8.jpg" alt="Detalhe de acabamento polido" loading="lazy"></div>
-      <div><img class="media-item" src="/static/portfolio/p9.jpg" alt="Sarrafiado em obra residencial" loading="lazy"></div>
-      <div>
-        <video class="video-item" src="/static/portfolio/v1.mp4" controls preload="metadata" playsinline></video>
-      </div>
-    </div>
-      <p class="texto-seo">
-Atendemos todo o estado de Minas Gerais com pisos e lages polidos e camuçados de alto padrão. Serviço profissional para residências, comércios e obras industriais, sempre com nivelamento desejado e acabamento impecável.
-</p>
-  </section>
+  <nav class="galeria-filtros" id="filtros">
+    <button class="ativo" data-filtro="todos">Todos</button>
+  </nav>
+
+  <main id="galeria-pisos" class="galeria-grid"></main>
+
+  <p class="texto-seo">
+    Atendemos todo o estado de Minas Gerais com pisos e lajes polidos e camuçados de alto padrão.
+    Serviço profissional para residências, comércios e obras industriais, sempre com nivelamento a laser
+    e acabamento impecável.
+  </p>
+</section>
+
+<!-- Script da galeria dinâmica -->
+<link rel="stylesheet" href="/static/galeria.css">
+<script src="/static/galeria.js" defer></script>
 
   <footer id="contato" class="rodape" role="contentinfo">
     <div class="rodape-container">
