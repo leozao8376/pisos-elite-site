@@ -5,12 +5,19 @@ on:
     - cron: "0 2 * * *"  # executa todo dia às 2h UTC (~23h no Brasil)
   workflow_dispatch:
 
+# === Permissões necessárias para o GitHub Actions poder fazer commit/push ===
+permissions:
+  contents: write
+
 jobs:
   sync:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout do repositório
         uses: actions/checkout@v3
+        with:
+          persist-credentials: true  # mantém autenticação para git push
 
       - name: Configurar Python
         uses: actions/setup-python@v4
@@ -32,5 +39,5 @@ jobs:
           git config --global user.name "Pisos Elite Bot"
           git config --global user.email "bot@pisoselite.com"
           git add cloudinary_videos.json
-          git commit -m "Atualização automática de vídeos"
+          git commit -m "Atualização automática de vídeos" || echo "Sem alterações para commit"
           git push
