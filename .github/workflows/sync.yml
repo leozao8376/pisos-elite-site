@@ -1,0 +1,36 @@
+name: Sincronizar vídeos Drive → Cloudinary
+
+on:
+  schedule:
+    - cron: "0 2 * * *"  # executa todo dia às 2h UTC (~23h no Brasil)
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Instalar dependências
+        run: pip install requests
+
+      - name: Executar script de sincronização
+        env:
+          CLOUD_NAME: ${{ secrets.CLOUD_NAME }}
+          API_KEY: ${{ secrets.API_KEY }}
+          API_SECRET: ${{ secrets.API_SECRET }}
+        run: python sync_drive_cloudinary.py
+
+      - name: Subir alterações
+        run: |
+          git config --global user.name "Pisos Elite Bot"
+          git config --global user.email "bot@pisoselite.com"
+          git add cloudinary_videos.json
+          git commit -m "Atualização automática de vídeos"
+          git push
