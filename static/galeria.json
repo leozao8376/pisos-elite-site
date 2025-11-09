@@ -1,26 +1,50 @@
 {
-  "atualizado_em": "2025-11-08T17:28:16",
+  "atualizado_em": "2025-11-09T06:51:55",
   "categorias": [
     {
       "nome": "Piso Polido",
       "itens": [
         {
-          "titulo": "Polido",
-          "tipo": "imagem",
-          "thumb": "https://drive.google.com/thumbnail?id=1_H8V0SrxB_x2Olo2nLos2EYdul9Ly7WS&sz=w800",
-          "url": "https://drive.google.com/uc?export=download&id=1_H8V0SrxB_x2Olo2nLos2EYdul9Ly7WS"
+          "titulo": "Finalizando piso polido (Três Maria)",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=1VUQmsWbCIwUzKSOh5dyIKV2yLkqUZ4PX&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681782/pisos_elite/videos/Finalizando_piso_polido_Tr_s_Maria.mp4"
         },
         {
-          "titulo": "IMG_20250717_210450",
+          "titulo": "Piso polido em andamento ( Três Maria)",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=1S5GnfwTQRZQsj2u2OFXavw-KgQ-OX2mb&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681792/pisos_elite/videos/Piso_polido_em_andamento_Tr_s_Maria.mp4"
+        },
+        {
+          "titulo": "Posto de gasolina (anel rodoviário - BH)",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=119Azo_pNtUOwepmjYJKZ6b4wUBK8bT_4&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681802/pisos_elite/videos/Posto_de_gasolina_anel_rodovi_rio_-_BH.mp4"
+        },
+        {
+          "titulo": "Concreto polido posto de gasolina ",
+          "tipo": "imagem",
+          "thumb": "https://drive.google.com/thumbnail?id=1Kj7-qDXEnO1ltg2QRWKkrOazOw_Xg45f&sz=w800",
+          "url": "https://drive.google.com/uc?export=download&id=1Kj7-qDXEnO1ltg2QRWKkrOazOw_Xg45f"
+        },
+        {
+          "titulo": "Cortes de dilatação piso industrial ",
+          "tipo": "imagem",
+          "thumb": "https://drive.google.com/thumbnail?id=1Is1zYXVHE3YUtsC1coZf47SxE6yNKTLL&sz=w800",
+          "url": "https://drive.google.com/uc?export=download&id=1Is1zYXVHE3YUtsC1coZf47SxE6yNKTLL"
+        },
+        {
+          "titulo": "Piso industrial Matozinhos ",
+          "tipo": "imagem",
+          "thumb": "https://drive.google.com/thumbnail?id=1qH7Pnc1IkHzJpYTkPD7IlCBkfMofc7Da&sz=w800",
+          "url": "https://drive.google.com/uc?export=download&id=1qH7Pnc1IkHzJpYTkPD7IlCBkfMofc7Da"
+        },
+        {
+          "titulo": "Piso polido em andamento ",
           "tipo": "imagem",
           "thumb": "https://drive.google.com/thumbnail?id=15wnw31-29wQAPyWyLIkFqqA2w6snqjsN&sz=w800",
           "url": "https://drive.google.com/uc?export=download&id=15wnw31-29wQAPyWyLIkFqqA2w6snqjsN"
-        },
-        {
-          "titulo": "image_1749560533315",
-          "tipo": "imagem",
-          "thumb": "https://drive.google.com/thumbnail?id=10H4pkhfyMHJMWteU2LbQ2gUwJUhW1xt5&sz=w800",
-          "url": "https://drive.google.com/uc?export=download&id=10H4pkhfyMHJMWteU2LbQ2gUwJUhW1xt5"
         }
       ]
     },
@@ -28,142 +52,168 @@
       "nome": "Camurçado",
       "itens": [
         {
-          "titulo": "Camurçado",
-          "tipo": "imagem",
-          "thumb": "https://drive.google.com/thumbnail?id=10Hfkt9150IszVsM5U_fAebF71CQKswoz&sz=w800",
-          "url": "https://drive.google.com/uc?export=download&id=10Hfkt9150IszVsM5U_fAebF71CQKswoz"
+          "titulo": "Piso camurçado em andamento ",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=11fkfe1rcH_vH7mXpL965aYSKakikckJd&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681808/pisos_elite/videos/Piso_camur_ado_em_andamento.mp4"
         },
         {
-          "titulo": "VID_20250618_130426_184",
+          "titulo": "Explicação camurçado ",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=1UQ_2TkYJCaQWWyU5rmabJb2VFdXby21q&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681814/pisos_elite/videos/Explica_o_camur_ado.mp4"
+        },
+        {
+          "titulo": "Passeio camurçado finalizado ",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=1t4pCa_yiyhFpA8JaRVbvfrWaC8o9J30P&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681822/pisos_elite/videos/Passeio_camur_ado_finalizado.mp4"
+        },
+        {
+          "titulo": "Lage camurçada em andamento ",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=1PXRksFkas0wzvbrJc9RLXsOL6d_Sf3I9&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681829/pisos_elite/videos/Lage_camur_ada_em_andamento.mp4"
+        },
+        {
+          "titulo": "Passeio camurçado Pampulha MG",
           "tipo": "video",
           "thumb": "https://drive.google.com/thumbnail?id=1KVWjXFH2esS7KtxdASIu56h2xnmiavIx&sz=w800",
-          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630104/pisos_elite/videos/VID_20250618_130426_184.mp4"
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681833/pisos_elite/videos/Passeio_camur_ado_Pampulha_MG.mp4"
         }
       ]
     },
     {
       "nome": "Vassourado",
-      "itens": []
+      "itens": [
+        {
+          "titulo": "Rampa vassourada em andamento ",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=11izKPzuk_rkspgEz1lhFZGvrUWVYcuOo&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681839/pisos_elite/videos/Rampa_vassourada_em_andamento.mp4"
+        },
+        {
+          "titulo": "Rampa vassourada finalizada ",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=1FD4EHf-qP4J0H5o908s99nmR-DoOlrmJ&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681844/pisos_elite/videos/Rampa_vassourada_finalizada.mp4"
+        }
+      ]
     },
     {
       "nome": "Finalização",
       "itens": [
         {
-          "titulo": "Sarrafiado",
+          "titulo": "Cortes para evitar trincas ",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=1BHnWJXCabEpfBHq4_jBaMy5k7EsDV8td&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681849/pisos_elite/videos/Cortes_para_evitar_trincas.mp4"
+        },
+        {
+          "titulo": "Posto de gasolina (Ribeirão das Neves)",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=1C0a_XCS8XBI9vyGDv74egG8jj-Z3_7BI&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681854/pisos_elite/videos/Posto_de_gasolina_Ribeir_o_das_Neves.mp4"
+        },
+        {
+          "titulo": "Piso polido em Matozinhos ",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=16-UFDFPE0aywTGF6fEUpiUaqFNGmdacF&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681860/pisos_elite/videos/Piso_polido_em_Matozinhos.mp4"
+        },
+        {
+          "titulo": "Cortes de dilatação ",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=1bFq6gh3yRGYXiG9iv_3sLRpJh8i6wM0N&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681866/pisos_elite/videos/Cortes_de_dilata_o.mp4"
+        },
+        {
+          "titulo": "Sarrafeado",
           "tipo": "imagem",
           "thumb": "https://drive.google.com/thumbnail?id=1f6SjVWuT-XoOPISj0gsI3tJ89DO5WM7Q&sz=w800",
           "url": "https://drive.google.com/uc?export=download&id=1f6SjVWuT-XoOPISj0gsI3tJ89DO5WM7Q"
         },
         {
-          "titulo": "Sarrafiado",
+          "titulo": "Sarrafeado em Nova Serrana ",
           "tipo": "video",
           "thumb": "https://drive.google.com/thumbnail?id=1ha_zyBh8fSiGHFpTjJT7Md4AMiSuPmzq&sz=w800",
-          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630110/pisos_elite/videos/Sarrafiado.mp4"
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681871/pisos_elite/videos/Sarrafeado_em_Nova_Serrana.mp4"
+        },
+        {
+          "titulo": "Garagem camurçada",
+          "tipo": "imagem",
+          "thumb": "https://drive.google.com/thumbnail?id=1C-a4Lg6yU5gtN0MnJmHU0amA4ShHPyCU&sz=w800",
+          "url": "https://drive.google.com/uc?export=download&id=1C-a4Lg6yU5gtN0MnJmHU0amA4ShHPyCU"
         }
       ]
     },
     {
       "nome": "Depoimentos",
-      "itens": []
+      "itens": [
+        {
+          "titulo": "Explicação pisos elite ",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=15C1TxI263QhR31iLgEtQrhWOHvgYRe0F&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681877/pisos_elite/videos/Explica_o_pisos_elite.mp4"
+        },
+        {
+          "titulo": "Cliente explicando o processo ",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=1n3hPNR5SCOfHXJkLnlp_amDDM-Aoy3xE&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681884/pisos_elite/videos/Cliente_explicando_o_processo.mp4"
+        },
+        {
+          "titulo": "Cliente Matozinhos satisfeito! 🙌❤️",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=1ZDd0ifcyWKIA747l5PH_JKQse_oYwyoK&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681890/pisos_elite/videos/Cliente_Matozinhos_satisfeito.mp4"
+        }
+      ]
     },
     {
       "nome": "Vídeos",
       "itens": [
         {
-          "titulo": "VID_20250606_144006_505",
+          "titulo": "Piso polido em andamento ( Três Maria)",
           "tipo": "video",
-          "thumb": "https://drive.google.com/thumbnail?id=18V7_GqoO9-nTsxrY5YpR8MRGqhL3OwsE&sz=w800",
-          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630115/pisos_elite/videos/VID_20250606_144006_505.mp4"
+          "thumb": "https://drive.google.com/thumbnail?id=1RYeky9yT1ivVYOG6AdyNbAB30fvWPOpL&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681792/pisos_elite/videos/Piso_polido_em_andamento_Tr_s_Maria.mp4"
         },
         {
-          "titulo": "VID_20250606_144058_810",
+          "titulo": "Explicação pisos elite ",
           "tipo": "video",
-          "thumb": "https://drive.google.com/thumbnail?id=18XFRxv7TvYBh1vEWddZlE8DdacOQUir3&sz=w800",
-          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630119/pisos_elite/videos/VID_20250606_144058_810.mp4"
+          "thumb": "https://drive.google.com/thumbnail?id=1eUAd80rKZcR30MwfinoKt9xgAG0bLa_4&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681877/pisos_elite/videos/Explica_o_pisos_elite.mp4"
         },
         {
-          "titulo": "VID_20250606_144153_654",
+          "titulo": "Posto de gasolina (anel rodoviário - BH)",
           "tipo": "video",
-          "thumb": "https://drive.google.com/thumbnail?id=18cR3xA-3Dg9y_e1d9KrFlcNObaHFoRpH&sz=w800",
-          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630124/pisos_elite/videos/VID_20250606_144153_654.mp4"
+          "thumb": "https://drive.google.com/thumbnail?id=1zZT4VvK_tsC2eT_2HfN3mj9ZTivjPWs9&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681802/pisos_elite/videos/Posto_de_gasolina_anel_rodovi_rio_-_BH.mp4"
         },
         {
-          "titulo": "VID_20250606_181116_403",
-          "tipo": "video",
-          "thumb": "https://drive.google.com/thumbnail?id=18ceAGd0_4tzWLu5qeN6zUMItzDAs50Fk&sz=w800",
-          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630127/pisos_elite/videos/VID_20250606_181116_403.mp4"
-        },
-        {
-          "titulo": "VID_20250613_074201_017",
-          "tipo": "video",
-          "thumb": "https://drive.google.com/thumbnail?id=18gML97D85Pwk1d5_I93Hoaj1kWzeIL92&sz=w800",
-          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630132/pisos_elite/videos/VID_20250613_074201_017.mp4"
-        },
-        {
-          "titulo": "VID_20250617_154558_970",
-          "tipo": "video",
-          "thumb": "https://drive.google.com/thumbnail?id=18o8KgEv70YB3E1qS56HT4AUjpZtrNfpp&sz=w800",
-          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630144/pisos_elite/videos/VID_20250617_154558_970.mp4"
-        },
-        {
-          "titulo": "VID_20250617_155546_597",
-          "tipo": "video",
-          "thumb": "https://drive.google.com/thumbnail?id=182hO0lK7gQJN6VvLiBl_zF5tpBv8aBmu&sz=w800",
-          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630149/pisos_elite/videos/VID_20250617_155546_597.mp4"
-        },
-        {
-          "titulo": "VID_20250618_045413_604",
-          "tipo": "video",
-          "thumb": "https://drive.google.com/thumbnail?id=18AaGz53GhwT9zEY99ow6JVVl8UWDyEIU&sz=w800",
-          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630155/pisos_elite/videos/VID_20250618_045413_604.mp4"
-        },
-        {
-          "titulo": "VID_20250618_045637_916",
-          "tipo": "video",
-          "thumb": "https://drive.google.com/thumbnail?id=18G2w6uwt1BfaLFiw_x-FX2w75c1zuLma&sz=w800",
-          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630162/pisos_elite/videos/VID_20250618_045637_916.mp4"
-        },
-        {
-          "titulo": "VID_20250618_045743_812",
+          "titulo": "Passeio em andamento ",
           "tipo": "video",
           "thumb": "https://drive.google.com/thumbnail?id=18H-gLb43CRuM3z1fKN5iWbS9r99M7zbz&sz=w800",
-          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630169/pisos_elite/videos/VID_20250618_045743_812.mp4"
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681896/pisos_elite/videos/Passeio_em_andamento.mp4"
         },
         {
-          "titulo": "VID_20250618_045833_299",
+          "titulo": "Passeio sarrafeado",
           "tipo": "video",
-          "thumb": "https://drive.google.com/thumbnail?id=18IvKR3_KnvvfhxwSWzdB6exr8z55qcTA&sz=w800",
-          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630174/pisos_elite/videos/VID_20250618_045833_299.mp4"
+          "thumb": "https://drive.google.com/thumbnail?id=18AaGz53GhwT9zEY99ow6JVVl8UWDyEIU&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681901/pisos_elite/videos/Passeio_sarrafeado.mp4"
         },
         {
-          "titulo": "VID_20250618_130311_997",
+          "titulo": "Lage sarrafeada pronta pra camurça",
           "tipo": "video",
-          "thumb": "https://drive.google.com/thumbnail?id=18JGv9KCVCzWSdMcjjrpKv71HPUcdFWnO&sz=w800",
-          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630179/pisos_elite/videos/VID_20250618_130311_997.mp4"
+          "thumb": "https://drive.google.com/thumbnail?id=18gML97D85Pwk1d5_I93Hoaj1kWzeIL92&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681907/pisos_elite/videos/Lage_sarrafeada_pronta_pra_camur_a.mp4"
         },
         {
-          "titulo": "VID_20250618_130426_184",
+          "titulo": "Sarrafeado com rodo ",
           "tipo": "video",
-          "thumb": "https://drive.google.com/thumbnail?id=18MSeKBO4N5_lMKx6hD7Yd7YQn-a4X6C-&sz=w800",
-          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630104/pisos_elite/videos/VID_20250618_130426_184.mp4"
-        },
-        {
-          "titulo": "VID_20250618_130552_074",
-          "tipo": "video",
-          "thumb": "https://drive.google.com/thumbnail?id=18MmhXWQ_jcQrtUniFAIEGWLZnAlTCUkM&sz=w800",
-          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630188/pisos_elite/videos/VID_20250618_130552_074.mp4"
-        },
-        {
-          "titulo": "VID_20250618_130712_096",
-          "tipo": "video",
-          "thumb": "https://drive.google.com/thumbnail?id=18OSWUsbKdRxf-wc0UOIKsDkIxwtLs_c3&sz=w800",
-          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630195/pisos_elite/videos/VID_20250618_130712_096.mp4"
-        },
-        {
-          "titulo": "VID_20250618_131405_566",
-          "tipo": "video",
-          "thumb": "https://drive.google.com/thumbnail?id=18-7tJm0BAkKQx9XolQ9ixYaOn9YrAibC&sz=w800",
-          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630200/pisos_elite/videos/VID_20250618_131405_566.mp4"
+          "thumb": "https://drive.google.com/thumbnail?id=18cR3xA-3Dg9y_e1d9KrFlcNObaHFoRpH&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681911/pisos_elite/videos/Sarrafeado_com_rodo.mp4"
         },
         {
           "titulo": "lage_parede_de_concreto",
