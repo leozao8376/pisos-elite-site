@@ -174,12 +174,6 @@
       "nome": "Vídeos",
       "itens": [
         {
-          "titulo": "Piso polido em andamento ( Três Maria)",
-          "tipo": "video",
-          "thumb": "https://drive.google.com/thumbnail?id=1RYeky9yT1ivVYOG6AdyNbAB30fvWPOpL&sz=w800",
-          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681792/pisos_elite/videos/Piso_polido_em_andamento_Tr_s_Maria.mp4"
-        },
-        {
           "titulo": "Explicação pisos elite ",
           "tipo": "video",
           "thumb": "https://drive.google.com/thumbnail?id=1eUAd80rKZcR30MwfinoKt9xgAG0bLa_4&sz=w800",
