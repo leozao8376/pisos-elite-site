@@ -772,12 +772,6 @@ html, body {
   font-size: var(--fs-cta);
 }
 
-.prova-cta .subtexto {
-  margin-top: 12px;
-  color: var(--mid);
-  font-size: 0.9rem;
-}
-
 @media (min-width: 768px) {
   .depo-grid {
     grid-template-columns: repeat(2, 1fr);
