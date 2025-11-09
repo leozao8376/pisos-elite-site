@@ -151,12 +151,6 @@
       "nome": "Depoimentos",
       "itens": [
         {
-          "titulo": "Explicação pisos elite ",
-          "tipo": "video",
-          "thumb": "https://drive.google.com/thumbnail?id=15C1TxI263QhR31iLgEtQrhWOHvgYRe0F&sz=w800",
-          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762681877/pisos_elite/videos/Explica_o_pisos_elite.mp4"
-        },
-        {
           "titulo": "Cliente explicando o processo ",
           "tipo": "video",
           "thumb": "https://drive.google.com/thumbnail?id=1n3hPNR5SCOfHXJkLnlp_amDDM-Aoy3xE&sz=w800",
