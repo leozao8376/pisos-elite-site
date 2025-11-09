@@ -713,3 +713,73 @@ html, body {
     grid-template-columns: repeat(3, 1fr) !important;
   }
 }
+
+/* =========================
+   AJUSTE PROVA SOCIAL PREMIUM
+   ========================= */
+.prova-social {
+  background: #fff;
+  padding: 48px 18px;
+  text-align: center;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.prova-social h2 {
+  font-size: var(--fs-h2);
+  font-weight: 700;
+  margin-bottom: 26px;
+  color: var(--ink);
+}
+
+.depo-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  max-width: 820px;
+  margin: 0 auto 26px;
+}
+
+.depo {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+  text-align: left;
+}
+
+.depo .texto {
+  color: var(--ink);
+  font-size: 1rem;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.depo .assinatura {
+  color: var(--mid);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.prova-cta {
+  text-align: center;
+}
+
+.prova-cta .botao-cta {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: var(--fs-cta);
+}
+
+.prova-cta .subtexto {
+  margin-top: 12px;
+  color: var(--mid);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .depo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
