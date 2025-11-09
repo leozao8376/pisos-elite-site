@@ -1,0 +1,405 @@
+/* ============================================================
+   Pisos Elite - Galeria Responsiva Profissional
+   Desenvolvido por GPT-5 + Leandro Adriano
+   ============================================================ */
+
+/* ======== Área principal ======== */
+#portfolio-section {
+  background: #fff;
+  padding: 40px 16px;
+}
+
+/* ======== Filtros ======== */
+#filtros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+#filtros button {
+  background: #fff;
+  border: 2px solid #d4af37;
+  color: #111;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+#filtros button:hover {
+  background: #d4af37;
+  color: #fff;
+}
+
+#filtros button.ativo {
+  background: #d4af37;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(212, 175, 55, 0.35);
+}
+
+/* ======== Grid da galeria ======== */
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+/* ======== Itens ======== */
+.galeria-item {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  background: #000;
+}
+
+/* Define tamanho fixo uniforme */
+/* ======== Itens atualizados ======== */
+.galeria-item img,
+.galeria-item video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 16; /* formato vertical estilo Reels */
+  object-fit: cover;
+  display: block;
+  transition: height .4s ease;
+  border-radius: 12px;
+}
+
+/* Efeito ao passar o dedo/mouse */
+.galeria-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* ======== Título ======== */
+.galeria-item .titulo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: #fff;
+  font-size: 1rem;
+  padding: 8px 10px;
+  text-align: center;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+}
+
+/* ======== Ícone de play ======== */
+.play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(212, 175, 55, 0.9);
+  color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.play-overlay:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  background: #bfa034;
+}
+
+/* ======== Lightbox ======== */
+/* ======== Lightbox Premium Pisos Elite ======== */
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+  z-index: 9999;
+  overflow: hidden; /* ✅ impede rolagem */
+}
+
+/* ✅ Ativo: mostra o Lightbox e bloqueia scroll da página */
+/* ===== Lightbox Global ===== */
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .28s ease;
+  z-index: 9999;
+  overflow: hidden; /* não rola */
+}
+#lightbox.active { opacity: 1; pointer-events: auto; }
+
+body.no-scroll { overflow: hidden; }
+
+/* Wrapper para centralizar corretamente */
+.lightbox-media-wrap {
+  max-width: 96vw;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Imagem */
+.lightbox-img {
+  max-width: 96vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 14px;
+  box-shadow: 0 10px 40px rgba(0,0,0,.55);
+  transform: scale(.96);
+  opacity: 0;
+  transition: transform .28s ease, opacity .28s ease;
+}
+#lightbox.active .lightbox-img { transform: scale(1); opacity: 1; }
+
+/* Botão fechar */
+.lightbox-close {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0,0,0,.55);
+  color: #d4af37;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 0 14px rgba(212,175,55,.35);
+  display: flex; align-items: center; justify-content: center;
+}
+.lightbox-close:hover { background: rgba(212,175,55,.92); color: #111; transform: rotate(90deg); }
+
+/* ✅ Efeito suave ao abrir/fechar */
+@keyframes fadeInLightbox {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#lightbox.active .lightbox-img {
+  animation: fadeInLightbox 0.35s ease forwards;
+}
+
+/* ======== Responsividade ======== */
+@media (min-width: 700px) {
+  #galeria {
+    grid-template-columns: repeat(2, 1fr); /* ✅ tablet: 2 colunas */
+  }
+
+  .galeria-item img,
+  .galeria-item video {
+    height: 260px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #galeria {
+    grid-template-columns: repeat(3, 1fr); /* ✅ PC: 3 colunas */
+  }
+
+  .galeria-item img,
+  .galeria-item video {
+    height: 280px;
+  }
+}
+
+/* ================= Loading elegante para vídeo ================= */
+.video-wrap {
+  position: relative;
+  background: #000;
+}
+
+.video-wrap .loading-overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(0,0,0,.35);
+  backdrop-filter: blur(1px);
+  z-index: 2;
+  animation: overlayFade .25s ease both;
+}
+
+@keyframes overlayFade {
+  from { opacity: 0; } to { opacity: 1; }
+}
+
+/* Anel de carregamento minimalista */
+.loading-overlay .ring {
+  width: 44px; height: 44px;
+  border: 3px solid rgba(255,255,255,.35);
+  border-top-color: #d4af37;
+  border-radius: 50%;
+  animation: ringSpin 0.8s linear infinite;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.15) inset;
+}
+
+@keyframes ringSpin { to { transform: rotate(360deg); } }
+
+/* Fade-in do <video> controlado pelo JS */
+.galeria-item.video video {
+  transition: opacity .35s ease;
+}
+
+/* Estado enquanto carrega (opcional: realçar borda dourada) */
+.video-wrap.loading {
+  box-shadow: 0 10px 26px rgba(212,175,55,.35);
+}
+
+/* =================== MODO CINEMA INLINE (versão refinada) =================== */
+
+.galeria.expanded-mode {
+  position: relative;
+  transition: filter .3s ease;
+}
+
+.galeria.expanded-mode .galeria-item:not(.expanded) {
+  opacity: 0.45;
+  filter: blur(1px);
+  transition: opacity .35s ease, filter .35s ease;
+}
+
+/* =================== MODO CINEMA INLINE (versão refinada corrigida) =================== */
+
+/* Quando o vídeo é expandido */
+.galeria-item.expanded {
+  grid-column: 1 / -1;
+  transform: scale(1.04);
+  z-index: 10;
+  box-shadow: 0 50px 60px rgba(0,0,0,0.45);
+  border-radius: 18px;
+  background: #000;
+  transition: transform .45s ease, box-shadow .45s ease;
+}
+
+/* Mantém proporção vertical, mas ajusta para ocupar boa parte da tela */
+.galeria-item.expanded .video-wrap {
+  aspect-ratio: 9 / 16; /* mantém vertical */
+  height: 80vh;         /* ocupa 80% da altura da tela */
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.galeria-item.expanded video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 18px;
+}
+
+/* Suaviza os outros cards ao fundo */
+.galeria.expanded-mode .galeria-item:not(.expanded) {
+  opacity: 0.4;
+  filter: blur(1px);
+  transition: opacity .35s ease, filter .35s ease;
+}
+
+/* Mobile: ligeiramente menor para caber melhor */
+@media (max-width: 768px) {
+  .galeria-item.expanded .video-wrap {
+    height: 70vh;
+  }
+  .galeria.expanded-mode .galeria-item:not(.expanded) {
+    opacity: .6;
+    filter: none;
+  }
+}
+
+/* melhora o espaçamento vertical da seção da galeria */
+.secao-galeria {
+  position: relative;
+  overflow: visible;
+  padding-bottom: 80px;
+}
+
+/* Evita o "vazio branco" quando o card expande */
+.galeria-feed {
+  overflow: hidden;              /* impede expansão pra fora do grid */
+  position: relative;
+}
+
+/* Quando em modo cinema, libera espaço pro item crescer */
+.galeria.expanded-mode {
+  overflow: visible;
+}
+
+/* === FIX 1: miniaturas menores no feed (vertical, mas não exagerado) === */
+/* Troca o 9/16 das miniaturas por 4/5 para reduzir a altura do card */
+.galeria-item .video-wrap,
+.galeria-item img,
+.galeria-item video{
+  aspect-ratio: 3 / 2 !important;   /* ↓ menor que 9/16, fica mais compacto */
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 16px;               /* mesmo raio do container */
+  overflow: hidden;
+}
+
+/* === FIX 2: some com as “bordas pretas” do card === */
+/* Hoje o card tem fundo preto, o que aparece nas bordas (cantos/ laterais) */
+.galeria-item{
+  background: #fff !important;       /* era #000 no arquivo atual */
+  border-radius: 16px;
+  overflow: hidden;                   /* garante mídia colada nas bordas */
+}
+
+/* === Modo cinema: vídeo GRANDE de verdade, ocupando a tela com 9/16 === */
+.galeria-item.expanded {             /* mantém o teu efeito de foco */
+  grid-column: 1 / -1;
+  transform: scale(1.04);
+  z-index: 10;
+  box-shadow: 0 50px 60px rgba(0,0,0,.45);
+  border-radius: 18px;
+  background: #000;                  /* no expandido, pode ser preto */
+}
+
+.galeria-item.expanded .video-wrap{
+  aspect-ratio: 9 / 16 !important;   /* agora sim: alto e imersivo */
+  height: 78vh;                       /* ocupa boa parte da tela */
+  max-height: 820px;                  /* limite de segurança */
+  border-radius: 18px;
+  overflow: hidden;
+}
+.galeria-item.expanded video{
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+  border-radius: 18px;
+}
+
+/* Mobile: deixa um pouquinho menor para caber com conforto */
+@media (max-width: 768px){
+  .galeria-item.expanded .video-wrap{ height: 70vh; }
+}

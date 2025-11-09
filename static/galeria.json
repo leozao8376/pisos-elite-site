@@ -1,0 +1,177 @@
+{
+  "atualizado_em": "2025-11-08T17:28:16",
+  "categorias": [
+    {
+      "nome": "Piso Polido",
+      "itens": [
+        {
+          "titulo": "Polido",
+          "tipo": "imagem",
+          "thumb": "https://drive.google.com/thumbnail?id=1_H8V0SrxB_x2Olo2nLos2EYdul9Ly7WS&sz=w800",
+          "url": "https://drive.google.com/uc?export=download&id=1_H8V0SrxB_x2Olo2nLos2EYdul9Ly7WS"
+        },
+        {
+          "titulo": "IMG_20250717_210450",
+          "tipo": "imagem",
+          "thumb": "https://drive.google.com/thumbnail?id=15wnw31-29wQAPyWyLIkFqqA2w6snqjsN&sz=w800",
+          "url": "https://drive.google.com/uc?export=download&id=15wnw31-29wQAPyWyLIkFqqA2w6snqjsN"
+        },
+        {
+          "titulo": "image_1749560533315",
+          "tipo": "imagem",
+          "thumb": "https://drive.google.com/thumbnail?id=10H4pkhfyMHJMWteU2LbQ2gUwJUhW1xt5&sz=w800",
+          "url": "https://drive.google.com/uc?export=download&id=10H4pkhfyMHJMWteU2LbQ2gUwJUhW1xt5"
+        }
+      ]
+    },
+    {
+      "nome": "Camurçado",
+      "itens": [
+        {
+          "titulo": "Camurçado",
+          "tipo": "imagem",
+          "thumb": "https://drive.google.com/thumbnail?id=10Hfkt9150IszVsM5U_fAebF71CQKswoz&sz=w800",
+          "url": "https://drive.google.com/uc?export=download&id=10Hfkt9150IszVsM5U_fAebF71CQKswoz"
+        },
+        {
+          "titulo": "VID_20250618_130426_184",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=1KVWjXFH2esS7KtxdASIu56h2xnmiavIx&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630104/pisos_elite/videos/VID_20250618_130426_184.mp4"
+        }
+      ]
+    },
+    {
+      "nome": "Vassourado",
+      "itens": []
+    },
+    {
+      "nome": "Finalização",
+      "itens": [
+        {
+          "titulo": "Sarrafiado",
+          "tipo": "imagem",
+          "thumb": "https://drive.google.com/thumbnail?id=1f6SjVWuT-XoOPISj0gsI3tJ89DO5WM7Q&sz=w800",
+          "url": "https://drive.google.com/uc?export=download&id=1f6SjVWuT-XoOPISj0gsI3tJ89DO5WM7Q"
+        },
+        {
+          "titulo": "Sarrafiado",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=1ha_zyBh8fSiGHFpTjJT7Md4AMiSuPmzq&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630110/pisos_elite/videos/Sarrafiado.mp4"
+        }
+      ]
+    },
+    {
+      "nome": "Depoimentos",
+      "itens": []
+    },
+    {
+      "nome": "Vídeos",
+      "itens": [
+        {
+          "titulo": "VID_20250606_144006_505",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=18V7_GqoO9-nTsxrY5YpR8MRGqhL3OwsE&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630115/pisos_elite/videos/VID_20250606_144006_505.mp4"
+        },
+        {
+          "titulo": "VID_20250606_144058_810",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=18XFRxv7TvYBh1vEWddZlE8DdacOQUir3&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630119/pisos_elite/videos/VID_20250606_144058_810.mp4"
+        },
+        {
+          "titulo": "VID_20250606_144153_654",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=18cR3xA-3Dg9y_e1d9KrFlcNObaHFoRpH&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630124/pisos_elite/videos/VID_20250606_144153_654.mp4"
+        },
+        {
+          "titulo": "VID_20250606_181116_403",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=18ceAGd0_4tzWLu5qeN6zUMItzDAs50Fk&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630127/pisos_elite/videos/VID_20250606_181116_403.mp4"
+        },
+        {
+          "titulo": "VID_20250613_074201_017",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=18gML97D85Pwk1d5_I93Hoaj1kWzeIL92&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630132/pisos_elite/videos/VID_20250613_074201_017.mp4"
+        },
+        {
+          "titulo": "VID_20250617_154558_970",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=18o8KgEv70YB3E1qS56HT4AUjpZtrNfpp&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630144/pisos_elite/videos/VID_20250617_154558_970.mp4"
+        },
+        {
+          "titulo": "VID_20250617_155546_597",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=182hO0lK7gQJN6VvLiBl_zF5tpBv8aBmu&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630149/pisos_elite/videos/VID_20250617_155546_597.mp4"
+        },
+        {
+          "titulo": "VID_20250618_045413_604",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=18AaGz53GhwT9zEY99ow6JVVl8UWDyEIU&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630155/pisos_elite/videos/VID_20250618_045413_604.mp4"
+        },
+        {
+          "titulo": "VID_20250618_045637_916",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=18G2w6uwt1BfaLFiw_x-FX2w75c1zuLma&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630162/pisos_elite/videos/VID_20250618_045637_916.mp4"
+        },
+        {
+          "titulo": "VID_20250618_045743_812",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=18H-gLb43CRuM3z1fKN5iWbS9r99M7zbz&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630169/pisos_elite/videos/VID_20250618_045743_812.mp4"
+        },
+        {
+          "titulo": "VID_20250618_045833_299",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=18IvKR3_KnvvfhxwSWzdB6exr8z55qcTA&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630174/pisos_elite/videos/VID_20250618_045833_299.mp4"
+        },
+        {
+          "titulo": "VID_20250618_130311_997",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=18JGv9KCVCzWSdMcjjrpKv71HPUcdFWnO&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630179/pisos_elite/videos/VID_20250618_130311_997.mp4"
+        },
+        {
+          "titulo": "VID_20250618_130426_184",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=18MSeKBO4N5_lMKx6hD7Yd7YQn-a4X6C-&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630104/pisos_elite/videos/VID_20250618_130426_184.mp4"
+        },
+        {
+          "titulo": "VID_20250618_130552_074",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=18MmhXWQ_jcQrtUniFAIEGWLZnAlTCUkM&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630188/pisos_elite/videos/VID_20250618_130552_074.mp4"
+        },
+        {
+          "titulo": "VID_20250618_130712_096",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=18OSWUsbKdRxf-wc0UOIKsDkIxwtLs_c3&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630195/pisos_elite/videos/VID_20250618_130712_096.mp4"
+        },
+        {
+          "titulo": "VID_20250618_131405_566",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=18-7tJm0BAkKQx9XolQ9ixYaOn9YrAibC&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630200/pisos_elite/videos/VID_20250618_131405_566.mp4"
+        },
+        {
+          "titulo": "lage_parede_de_concreto",
+          "tipo": "video",
+          "thumb": "https://drive.google.com/thumbnail?id=141YcaSm7ehNGCVbY9Irk5mTtG74YRagu&sz=w800",
+          "url": "https://res.cloudinary.com/dcaphjljo/video/upload/v1762630206/pisos_elite/videos/lage_parede_de_concreto.mp4"
+        }
+      ]
+    }
+  ]
+}

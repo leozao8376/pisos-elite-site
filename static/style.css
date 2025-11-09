@@ -1,0 +1,715 @@
+/* =========================
+   PISOS ELITE — THEME LUXO
+   ========================= */
+
+/* Reset & Base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+  /* Cores principais */
+  --gold: #D4AF37;           /* Ouro luxo */
+  --gold-2: #E6C362;         /* Ouro claro */
+  --gold-3: #B38B1B;         /* Ouro profundo p/ hover */
+  --graphite: #0F1115;       /* Fundo header/rodapé */
+  --ink: #171A1F;            /* Texto forte / títulos escuros */
+  --soft: #F5F6F8;           /* Fundo claro das seções */
+  --mid: #6D7179;            /* Texto secundário */
+  --line: #EAECEF;           /* Linhas sutis */
+
+  /* WhatsApp exclusivo */
+  --zap: #25D366;
+
+  /* Shadows & radius */
+  --shadow-sm: 0 4px 16px rgba(0,0,0,0.08);
+  --shadow-md: 0 10px 30px rgba(0,0,0,0.12);
+  --shadow-lg: 0 18px 50px rgba(0,0,0,0.18);
+  --radius: 16px;
+  --radius-lg: 22px;
+
+  /* Tipografia */
+  --fs-hero: clamp(24px, 5.3vw, 44px);
+  --fs-h2: clamp(20px, 4.2vw, 28px);
+  --fs-h3: clamp(17px, 3.6vw, 22px);
+  --fs-body: clamp(14px, 3.4vw, 16px);
+  --fs-cta: clamp(16px, 3.8vw, 18px);
+}
+
+body, html {
+  overscroll-behavior-y: none; /* evita "puxar" scroll no fim */
+}
+
+body{
+  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: var(--soft);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img{ max-width:100%; display:block; }
+
+/* Acessibilidade: foco visível */
+:focus-visible{
+  outline: 3px solid color-mix(in srgb, var(--gold) 60%, white);
+  outline-offset: 2px;
+  border-radius: 10px;
+}
+
+/* =========================
+   HEADER / NAV
+   ========================= */
+.topo{
+  position: sticky; top: 0; z-index: 999;
+  background: linear-gradient(180deg, #0B0D11 0%, var(--graphite) 100%);
+  color: #fff;
+  box-shadow: 0 8px 30px rgba(0,0,0,.25);
+  border-bottom: 1px solid rgba(212,175,55,.25);
+}
+
+.header-container{
+  display:flex; align-items:center; justify-content:space-between;
+  gap: 10px; padding: 12px 18px; position: relative;
+  max-width: 1100px; margin: 0 auto;
+}
+
+.logo-img{ height: 42px; width: 42px; border-radius: 50%; border: 1px solid rgba(255,255,255,.15); }
+
+.titulo-central{
+  position:absolute; left:50%; transform: translateX(-50%);
+  font-weight: 700; letter-spacing:.4px;
+  background: linear-gradient(90deg, var(--gold) 0%, var(--gold-2) 60%, #fff 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  text-shadow: 0 0 18px rgba(212,175,55,.15);
+  font-size: clamp(16px, 4.4vw, 20px);
+  user-select:none; pointer-events:none;
+}
+
+.hamburguer{
+  font-size: 28px; cursor: pointer; padding: 6px 8px; user-select:none;
+  border-radius: 10px; transition: transform .25s ease, background .25s ease;
+}
+.hamburguer:hover{ background: rgba(255,255,255,.06); }
+.hamburguer.ativo{ transform: rotate(90deg) scale(1.02); }
+
+/* Dropdown */
+.menu{
+  position: absolute; right: 12px; top: 62px; min-width: 190px;
+  display:flex; flex-direction:column; gap:0;
+  background: rgba(17,19,24,.96);
+  border: 1px solid rgba(212,175,55,.28);
+  border-radius: 14px; box-shadow: var(--shadow-lg);
+  opacity:0; transform: translateY(-8px); pointer-events:none;
+  transition: opacity .25s ease, transform .25s ease;
+}
+.menu.ativo{ opacity:1; transform: translateY(0); pointer-events:auto; }
+
+.menu a{
+  color:#E9EAEE; text-decoration:none; font-size: 14px; padding: 12px 14px;
+  border-top: 1px solid rgba(255,255,255,.06);
+  transition: background .2s ease, color .2s ease, padding-left .2s ease;
+}
+.menu a:first-child{ border-top:none; }
+.menu a:hover{ background: rgba(255,255,255,.06); color: #fff; padding-left: 18px; }
+.menu .whatsapp-link{ color: #DFFFEF; font-weight: 600; }
+
+/* =========================
+   HERO
+   ========================= */
+.hero{
+  padding: 84px 18px 60px;
+  background:
+    radial-gradient(1800px 400px at 50% -20%, rgba(212,175,55,.15), transparent 60%),
+    linear-gradient(180deg, #121319 0%, #171A1F 100%);
+  color: #fff; text-align:center;
+  border-bottom: 1px solid rgba(212,175,55,.12);
+}
+
+.hero-content{ max-width: 960px; margin: 0 auto; }
+
+.hero h1{
+  font-size: var(--fs-hero); font-weight: 700;
+  line-height: 1.15; letter-spacing:.2px;
+  margin-bottom: 12px;
+}
+
+.hero p{
+  font-size: var(--fs-body); color: #D1D4DB;
+  margin: 0 auto 26px; max-width: 700px;
+}
+
+/* CTA padrão do site (ouro) */
+.botao-cta{
+  display:inline-block; text-decoration:none; user-select:none;
+  padding: 14px 28px; border-radius: 999px;
+  font-size: var(--fs-cta); font-weight:700; letter-spacing:.3px;
+  color: #111;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-2) 60%, #FFF5CC 100%);
+  box-shadow: 0 10px 30px rgba(212,175,55,.35), inset 0 1px 0 rgba(255,255,255,.45);
+  border: 1px solid color-mix(in srgb, var(--gold) 65%, #000);
+  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease, background .2s ease;
+}
+.botao-cta:hover,
+.botao-cta:focus{
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, var(--gold-2) 0%, var(--gold) 70%, #FFF1A8 100%);
+  box-shadow: 0 14px 40px rgba(212,175,55,.45);
+}
+
+/* =========================
+   SEÇÃO: SERVIÇOS (ajustada p/ mostrar todos os cards)
+   ========================= */
+.servicos {
+  background:#fff;
+  padding: 42px 18px;
+  text-align:center;
+}
+.servicos h2 {
+  font-size: var(--fs-h2);
+  font-weight: 700;
+  margin-bottom: 26px;
+  color: var(--ink);
+}
+
+/* ===== Mídia dentro dos cartões (Serviços) ===== */
+.card .card-media {
+  margin: -4px -4px 14px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--line);
+}
+.card .card-media img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.001);
+  transition: transform .25s ease, filter .25s ease;
+}
+.card:hover .card-media img {
+  transform: scale(1.02);
+  filter: contrast(1.05);
+}
+
+/* === Harmonização dos cards de Serviços (mobile RN13 friendly) === */
+
+/* container centralizado e com respiro */
+.servicos .cards {
+  display: flex;
+  flex-wrap: wrap;              /* <-- ESSENCIAL: permite várias linhas */
+  justify-content: center;
+  gap: 14px !important;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+/* card mais leve e alinhado por altura */
+.servicos .card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 330px;             /* largura padrão ideal */
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.06);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, #FFFFFF 0%, #FAFAFD 100%);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.servicos .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0,0,0,.08);
+}
+
+/* mídia menor: ocupa ~45% da largura em altura */
+.servicos .card .card-media {
+  position: relative;
+  margin: 0 0 10px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #F1F3F7;
+}
+.servicos .card .card-media::before {
+  content: "";
+  display: block;
+  padding-top: 60%;
+}
+.servicos .card .card-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: none;
+  transition: transform .25s ease, filter .25s ease;
+}
+.servicos .card:hover .card-media img {
+  transform: scale(1.02);
+  filter: contrast(1.04);
+}
+
+/* texto e botão */
+.servicos .card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+.servicos .card p {
+  font-size: 0.95rem;
+  color: var(--mid);
+  line-height: 1.4;
+}
+.servicos .card p:first-of-type {
+  font-weight: 700;
+  color: var(--ink);
+}
+.servicos .card .botao-cta.pequeno,
+.servicos .card a.botao-cta.pequeno {
+  margin-top: auto;
+  font-size: .95rem;
+  padding: 9px 16px;
+  border-radius: 10px;
+  box-shadow: 0 8px 18px rgba(212,175,55,.25);
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+  .servicos .card { max-width: 45%; } /* dois por linha */
+}
+@media (min-width: 1024px) {
+  .servicos .card { max-width: 31%; } /* três por linha */
+}
+
+/* =========================
+   SEÇÃO: COMO FUNCIONA
+   ========================= */
+.como-funciona{
+  background: var(--soft); padding: 42px 18px; text-align:center;
+  border-top: 1px solid var(--line);
+}
+.como-funciona h2{ font-size: var(--fs-h2); font-weight: 700; margin-bottom: 20px; }
+.como-funciona ol{
+  text-align:left; max-width: 660px; margin: 0 auto; padding-left: 22px;
+  color: var(--ink); font-size: var(--fs-body);
+}
+.como-funciona li{ margin-bottom: 12px; }
+.como-funciona li::marker{ color: var(--gold); font-weight: 700; }
+
+/* =========================
+   /* =========================
+   SEÇÃO: ORÇAMENTO
+   ========================= */
+.orcamento{
+  background:#fff;
+  padding: 42px 18px;
+  text-align:center;
+  border-top:1px solid var(--line);
+}
+.orcamento h2{
+  font-size:var(--fs-h2);
+  font-weight:700;
+  margin-bottom:24px;
+}
+
+.orcamento form{
+  max-width:560px;       /* centraliza e dá respiro */
+  margin:0 auto;
+}
+
+.orcamento label{
+  display:block;
+  font-weight:600;
+  margin-bottom:10px;
+  color:var(--ink);
+}
+
+/* Input metragem */
+.orcamento input[type="number"]{
+  width:100%;
+  max-width:340px;
+  margin:0 auto 18px;
+  padding:14px 16px;
+  font-size:16px;
+  border-radius:12px;
+  border:1px solid var(--line);
+  background:#FBFBFE;
+  transition:border-color .2s ease, box-shadow .2s ease;
+}
+.orcamento input[type="number"]:focus{
+  border-color:color-mix(in srgb, var(--gold) 55%, var(--line));
+  box-shadow:0 6px 18px rgba(212,175,55,.18);
+  outline:none;
+}
+/* Remove setinhas do number */
+.orcamento input[type="number"]::-webkit-outer-spin-button,
+.orcamento input[type="number"]::-webkit-inner-spin-button{ -webkit-appearance:none; margin:0; }
+.orcamento input[type="number"]{ -moz-appearance:textfield; }
+
+/* Opções de tipo (compatível com .opcoes novo e .tipo-piso antigo) */
+.orcamento .opcoes,
+.orcamento .tipo-piso{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:10px;
+  max-width:560px;
+  margin:0 auto 24px;
+  text-align:left;
+}
+.orcamento .opcoes label,
+.orcamento .tipo-piso label{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:10px 12px;
+  font-weight:500;
+  color:var(--ink);
+  cursor:pointer;
+  transition:background .2s ease, border-color .2s ease, box-shadow .2s ease, transform .15s ease;
+}
+.orcamento .opcoes input[type="radio"],
+.orcamento .tipo-piso input[type="radio"]{
+  accent-color:var(--gold);
+}
+
+/* Hover/focus visual */
+.orcamento .opcoes label:hover,
+.orcamento .tipo-piso label:hover{
+  border-color:var(--gold);
+  background:#fffbe6;
+}
+
+/* Destaque da opção selecionada (Chrome/Android já suporta :has) */
+.orcamento .opcoes label:has(> input:checked),
+.orcamento .tipo-piso label:has(> input:checked){
+  border-color:color-mix(in srgb, var(--gold) 55%, var(--line));
+  box-shadow:0 6px 18px rgba(212,175,55,.22);
+  background:linear-gradient(180deg, #fff 0%, #FFF8E0 100%);
+}
+
+/* Botão calcular */
+.orcamento button{
+  background:linear-gradient(135deg, var(--gold) 0%, var(--gold-2) 70%);
+  color:#111;
+  border:none;
+  padding:14px 28px;
+  border-radius:999px;
+  cursor:pointer;
+  font-weight:800;
+  font-size:var(--fs-cta);
+  box-shadow:0 10px 24px rgba(212,175,55,.35);
+  transition:transform .15s ease, box-shadow .2s ease, filter .2s ease;
+}
+.orcamento button:hover,
+.orcamento button:focus{
+  transform:translateY(-1px);
+  box-shadow:0 14px 34px rgba(212,175,55,.45);
+}
+
+/* Resultado */
+#resultado{
+  background:#FAFAFD;
+  border-radius:14px;
+  padding:20px;
+  margin-top:22px;
+  max-width:420px;
+  margin-left:auto;
+  margin-right:auto;
+  box-shadow:var(--shadow-sm);
+  border:1px solid var(--line);
+  color:var(--ink);
+  font-weight:600;
+}
+#resultado .botao-cta{
+  margin-top:12px;
+}
+
+/* Botão pequeno (reuso) */
+.botao-cta.pequeno{
+  font-size:.9rem;
+  padding:8px 14px;
+  margin-top:8px;
+  border-radius:8px;
+}
+
+/* Responsivo fino */
+@media (max-width:380px){
+  .orcamento .opcoes,
+  .orcamento .tipo-piso{
+    grid-template-columns:1fr; /* em telas muito estreitas, vira 1 coluna */
+  }
+}
+
+/* Botão pequeno usado nos cards */
+.botao-cta.pequeno{
+  font-size: 0.9rem;
+  padding: 8px 14px;
+  margin-top: 8px;
+  border-radius: 8px;
+}
+
+/* =========================
+   PORTFÓLIO (GRID BASE)
+   * Para o MVP, mantém estrutura simples.
+   ========================= */
+.secao-galeria{
+  padding: 42px 18px; background: var(--soft); text-align:center;
+  border-top: 1px solid var(--line);
+}
+.filtro-container{
+  display:flex; flex-wrap:wrap; justify-content:center; gap: 10px; margin-bottom: 22px;
+}
+.filtro{
+  border:none; padding: 10px 18px; border-radius: 999px; cursor:pointer;
+  font-weight:700; color: var(--ink); background:#EEEFF3;
+  transition: background .2s ease, color .2s ease, transform .15s ease;
+}
+.filtro:hover{ transform: translateY(-1px); }
+.filtro.ativo{ background: var(--gold); color: #111; }
+
+.galeria-feed{
+  display:grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap:10px; padding: 0 6px;
+}
+.galeria-feed > div{
+  position:relative; overflow:hidden; border-radius: 14px; background:#EDEFF3;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm); transition: transform .25s ease, box-shadow .25s ease;
+}
+.galeria-feed > div:hover{ transform: translateY(-3px); box-shadow: var(--shadow-md); }
+
+.media-item, .video-item{
+  width:100%; height:100%; object-fit:cover; display:block;
+}
+
+/* =========================
+   RODAPÉ
+   ========================= */
+.rodape{
+  background: linear-gradient(180deg, var(--graphite) 0%, #0B0D11 100%);
+  color: #E8EAF0; padding: 44px 18px 20px; font-size: 14px;
+  border-top: 1px solid rgba(212,175,55,.18);
+}
+.rodape-container{
+  display:flex; flex-wrap:wrap; justify-content:space-between; gap: 28px;
+  max-width: 1100px; margin: 0 auto;
+}
+.rodape-logo img{
+  max-width: 120px; margin-bottom: 10px; border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.18);
+}
+.rodape-logo p{ max-width: 280px; color: #C8CBD2; }
+
+.rodape-links h4, .rodape-contato h4{
+  font-size: 16px; margin-bottom: 10px; color: #fff; position:relative;
+}
+.rodape-links h4::after,
+.rodape-contato h4::after{
+  content:""; position:absolute; left:0; bottom:-6px; width: 36px; height: 2px; background: var(--gold);
+  border-radius: 2px;
+}
+
+.rodape-links a, .rodape-contato a{
+  display:block; color:#C8CBD2; text-decoration:none; margin: 6px 0;
+  transition: color .2s ease, transform .15s ease;
+}
+.rodape-links a:hover, .rodape-contato a:hover{
+  color: #fff; transform: translateX(2px);
+}
+
+.rodape-contato p{ margin-bottom: 8px; }
+
+.redes-sociais{ margin-top: 10px; }
+.redes-sociais .social-icon{ display:inline-block; margin-right: 10px; transition: transform .2s ease; }
+.redes-sociais .social-icon img{ width: 24px; height: 24px; filter: brightness(.9) contrast(1.05); transition: filter .2s ease; }
+.redes-sociais .social-icon:hover{ transform: translateY(-2px) scale(1.03); }
+.redes-sociais .social-icon:hover img{ filter: brightness(1) contrast(1.1); }
+
+.rodape-direitos{
+  text-align:center; margin-top: 24px; font-size: 13px; color:#A8ACB3;
+  border-top: 1px solid rgba(255,255,255,.08); padding-top: 14px;
+}
+
+/* =========================
+   BOTÃO FLUTUANTE WHATSAPP
+   ========================= */
+.whatsapp-flutuante{
+  position: fixed; bottom: 18px; right: 18px; z-index: 9999;
+  width: 58px; height: 58px; border-radius: 50%;
+  display:flex; align-items:center; justify-content:center;
+  background: var(--zap);
+  box-shadow: 0 14px 38px rgba(37,211,102,.45), inset 0 1px 0 rgba(255,255,255,.45);
+  transition: transform .15s ease, box-shadow .2s ease, filter .2s ease;
+}
+.whatsapp-flutuante:hover{ transform: translateY(-1px) scale(1.03); box-shadow: 0 18px 44px rgba(37,211,102,.55); }
+.whatsapp-flutuante img{ width: 28px; height: 28px; filter: brightness(0) invert(1); }
+
+/* =========================
+   MENSAGENS FAKE (DESATIVADAS)
+   ========================= */
+.mensagem-fake{ display:none !important; }
+
+/* =========================
+   MODAL / LIKE / SKELETON (MVP sem dependências)
+   ========================= */
+.like-box, .like-btn, .skeleton, #modal-fullscreen, .fechar-modal{ display: none !important; }
+
+/* =========================
+   RESPONSIVIDADE
+   ========================= */
+@media (min-width: 768px){
+  /* Removido o flex antigo em .cards; grid já cuida das colunas. */
+  .tipo-piso{ flex-direction: row; justify-content: center; align-items:center; gap: 16px; }
+  .galeria-feed{ grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+}
+
+@media (max-width: 767px){
+  .hero{ padding-top: 76px; }
+  .hero p{ padding: 0 4px; }
+  .menu{ min-width: 160px; right: 10px; top: 58px; }
+
+  .rodape-container{
+    flex-direction: column; align-items: center; text-align: center;
+  }
+  .rodape-logo img{ margin: 0 auto 10px; }
+  .rodape-links h4::after, .rodape-contato h4::after{ left: 50%; transform: translateX(-50%); }
+}
+
+/* =========================
+   MICRO-ANIMAÇÕES SUAVES
+   ========================= */
+@keyframes fadeInUp{
+  from{ opacity: 0; transform: translateY(6px); }
+  to{ opacity: 1; transform: translateY(0); }
+}
+.hero-content, .cards, .como-funciona, .orcamento, .secao-galeria, .rodape-container{
+  animation: fadeInUp .5s ease both;
+}
+
+
+
+/* MAPA INVISÍVEL MAS RASTREADO */
+.mapa-seo {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* BLOCO DE TEXTO SEO */
+.texto-seo {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 18px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: center;
+  background: #f9f9f9;
+  border-left: 4px solid #111;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.texto-seo strong {
+  color: #000;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .texto-seo {
+    font-size: 1.1rem;
+    padding: 20px 30px;
+  }
+}
+
+    .prova-social{background:var(--soft,#F5F6F8);padding:40px 18px;text-align:center;border-top:1px solid var(--line,#EAECEF);border-bottom:1px solid var(--line,#EAECEF)}
+    .prova-social h2{font-size:var(--fs-h2,24px);font-weight:700;margin-bottom:20px}
+    .depo-grid{display:grid;grid-template-columns:1fr;gap:14px;max-width:900px;margin:0 auto}
+    .depo{background:#fff;border:1px solid var(--line,#EAECEF);border-radius:16px;padding:18px;box-shadow:0 4px 16px rgba(0,0,0,.08);text-align:left}
+    .depo .texto{color:var(--ink,#171A1F);margin-bottom:8px}
+    .depo .assinatura{color:var(--mid,#6D7179);font-weight:600}
+    @media (min-width:768px){.depo-grid{grid-template-columns:repeat(3,1fr)}}
+    
+    
+.whatsapp-flutuante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 62px;
+  height: 62px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 1000;
+  animation: pulse 2s infinite;
+  transition: transform 0.2s ease;
+}
+.whatsapp-flutuante:hover {
+  transform: scale(1.1);
+}
+.whatsapp-flutuante img {
+  width: 38px;
+  height: 38px;
+  filter: brightness(0) invert(1);
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37,211,102, 0.5); }
+  70% { box-shadow: 0 0 0 12px rgba(37,211,102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37,211,102, 0); }
+}
+
+/* === Correção de scroll lateral no mobile e desktop === */
+html, body {
+  overflow-x: hidden !important;
+}
+
+/* Em casos de lightbox ou iframes largos */
+.lightbox,
+.video-wrapper,
+.img-fullscreen {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* melhora o espaçamento vertical da seção da galeria */
+.secao-galeria {
+  position: relative;
+  overflow: visible;
+  padding-bottom: 40px; /* reduz a área extra */
+}
+
+/* ======== Layout responsivo da galeria (ajuste mobile) ======== */
+
+/* Mobile: 1 card por linha */
+@media (max-width: 767px) {
+  .galeria-feed {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Tablets: 2 colunas */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .galeria-feed {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Desktop: 3 colunas */
+@media (min-width: 1024px) {
+  .galeria-feed {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
