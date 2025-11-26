@@ -3,6 +3,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'SEU_PIXEL_ID_AQUI'); 
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=SEU_PIXEL_ID_AQUI&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
   <!-- SEO - Pisos Elite -->
 <title>Pisos Elite | Piso Polido e Camuçado em Belo Horizonte - MG</title>
 <meta name="description" content="Pisos Elite é especializada em piso polido e camuçado de alto padrão em Belo Horizonte e todo o estado de Minas Gerais. Nivelamento a laser, acabamento impecável e atendimento rápido pelo WhatsApp.">
@@ -56,7 +74,7 @@
   <link rel="stylesheet" href="/static/style.css" />
 
   <!-- CSS mínimo para Prova Social (caso não esteja no style.css) -->
-  
+
 </head>
 <body>
   <header class="topo" role="banner">
@@ -379,7 +397,7 @@
         resultado.innerHTML = `
           <p>Para este tipo de piso, o valor é combinado diretamente.</p>
           <a href="https://wa.me/5531982112212?text=${textoZap}&utm_source=site&utm_medium=cta_orcamento&utm_campaign=pisos_elite_v1"
-             target="_blank" rel="noopener" class="botao-cta" style="display:inline-block; margin-top:12px;">Chamar no WhatsApp</a>
+             target="_blank" rel="noopener" class="botao-cta btn-whatsapp" style="display:inline-block; margin-top:12px;">Chamar no WhatsApp</a>
         `;
         return;
       }
@@ -401,7 +419,7 @@
         <p>Orçamento estimado: <strong>${dinheiro(final)}</strong></p>
         ${msgMin}
         <a href="https://wa.me/5531982112212?text=${textoZap}&utm_source=site&utm_medium=cta_orcamento&utm_campaign=pisos_elite_v1"
-           target="_blank" rel="noopener" class="botao-cta" style="display:inline-block; margin-top:12px;">Chamar no WhatsApp</a>
+           target="_blank" rel="noopener" class="botao-cta btn-whatsapp" style="display:inline-block; margin-top:12px;">Chamar no WhatsApp</a>
       `;
     }
 
@@ -419,5 +437,42 @@
     }
   }
   </script>
+
+  <!-- ======= PIXEL: Rastreamento dos botões de WhatsApp ======= -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      // Função que adiciona rastreamento a todos os botões com a classe btn-whatsapp
+      function configurarPixelWhatsApp() {
+        const botoes = document.querySelectorAll('.btn-whatsapp');
+
+        botoes.forEach(btn => {
+          // Evita adicionar o evento duas vezes
+          if (!btn.classList.contains('pixel-ok')) {
+            btn.classList.add('pixel-ok');
+
+            btn.addEventListener('click', () => {
+              fbq('track', 'Contact', {
+                content_name: 'WhatsApp Click',
+                value: 0.00,
+                currency: 'BRL'
+              });
+            });
+          }
+        });
+      }
+
+      // Configura no carregamento inicial
+      configurarPixelWhatsApp();
+
+      // Observa mudanças no DOM (para botões criados via JS)
+      const observer = new MutationObserver(() => {
+        configurarPixelWhatsApp();
+      });
+
+      observer.observe(document.body, { childList: true, subtree: true });
+    });
+  </script>
+
 </body>
 </html>
