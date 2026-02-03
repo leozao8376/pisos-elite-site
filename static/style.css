@@ -36,8 +36,11 @@
   --fs-cta: clamp(16px, 3.8vw, 18px);
 }
 
-body, html {
-  overscroll-behavior-y: none; /* evita "puxar" scroll no fim */
+/* NÃO aplique em html/body */
+.secao-galeria,
+.hero,
+.servicos {
+  overscroll-behavior: contain;
 }
 
 body{
@@ -776,4 +779,11 @@ html, body {
   .depo-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+html, body {
+  height: auto !important;
+  overflow-y: auto !important;
+  position: relative !important;
+  -webkit-overflow-scrolling: touch;
 }
